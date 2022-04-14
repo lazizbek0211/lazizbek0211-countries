@@ -66,15 +66,13 @@ body{
     --text-color:#fff;
     --bg-color:#2b3844;
     --placeholder-color:#fff;
-    
-    .
 }
 img{
     height:auto;
     max-width: 100%;   
 }
 *:focus{
-    outline: 3px dashed skyblue;
+    outline: 3px dashed rgb(148, 137, 137);
     outline-offset: 3px;
 }
 .container{
@@ -103,6 +101,10 @@ img{
     margin: 0;
     padding-top: 23px;
     padding-bottom: 23px;
+}
+.question-link{
+    text-decoration: none;
+    color:var(--text-color);
 }
 .dark-mode {
     border: none;
@@ -144,6 +146,14 @@ img{
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+}
+.search-input::before{
+    background-image:url(../img/search-icon.svg);
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-repeat: no-repeat;
+    background-position: 34px center;
 }
 .list{
     padding: 18px 25px 18px 24px;
